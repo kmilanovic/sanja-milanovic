@@ -3,7 +3,6 @@ import IntroContent from "../../content/IntroContent.json";
 import AboutContent from "../../content/AboutContent.json";
 import HypnotherapyContent from "../../content/HypnotherapyContent.json";
 import AcupunctureContent from "../../content/AcupunctureContent.json";
-import ProductContent from "../../content/ProductContent.json";
 import ContactContent from "../../content/ContactContent.json";
 import { SvgIcon } from "../../common/SvgIcon";
 

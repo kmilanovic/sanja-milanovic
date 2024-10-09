@@ -95,7 +95,6 @@ export const FooterContainer = styled("div")`
   text-align: center;
   align-items: center;
   transition: all 10s ease-in-out;
-  font-size: 12px;
 
   a {
     &:hover,

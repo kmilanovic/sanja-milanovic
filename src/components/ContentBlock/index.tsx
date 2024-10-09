@@ -1,7 +1,6 @@
 import { Row, Col } from "antd";
 import { Fade } from "react-awesome-reveal";
 import { withTranslation } from "react-i18next";
-import { ReactNode } from "react"; // Import ReactNode type for flexibility
 
 import { ContentBlockProps } from "./types";
 import { Button } from "../../common/Button";
@@ -58,7 +57,6 @@ const ContentBlock = ({
               )}
               <Content>{t(content)}</Content>
 
-              {/* Handle both buttons and sections regardless of direction */}
               {button && button.length > 0 && (
                 <ButtonWrapper>
                   {button.map(
@@ -87,7 +85,6 @@ const ContentBlock = ({
                 </ButtonWrapper>
               )}
 
-              {/* Render section if available */}
               {section && section.length > 0 && (
                 <ServiceWrapper>
                   <Row justify="space-between">
