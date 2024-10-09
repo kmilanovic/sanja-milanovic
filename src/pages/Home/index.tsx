@@ -18,7 +18,7 @@ const Home = () => {
       <ScrollToTop />
       <ContentBlock
         direction="right"
-        title={<SvgIcon src="sanja-milanovic-signature.svg" width="600px" height="400px" />} 
+        title={<SvgIcon src="sanja-milanovic-signature2.svg" width="500px" height="300px" />} 
         content={IntroContent.text}
         button={IntroContent.button}
         icon="ai-generated-a-female-doctor-with-a-stethoscope-isolated-on-transparent-background-free-png.webp"

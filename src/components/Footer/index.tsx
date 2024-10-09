@@ -69,7 +69,7 @@ const Footer = ({ t }: { t: TFunction }) => {
           </Row>
 
           <Row justify="space-between" align="middle" style={{ paddingTop: "3rem" }}>
-            <a href="/" aria-label="homepage">
+            <a aria-label="homepage">
               <LogoContainer>
                 <SvgIcon
                   src="sm2.svg"
