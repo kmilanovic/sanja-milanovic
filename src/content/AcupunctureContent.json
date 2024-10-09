@@ -1,0 +1,16 @@
+{
+  "title": "Akupunktura",
+  "text": "Akupunktura je drevna kineska terapija koja se temelji na stimulaciji specifičnih točaka na tijelu pomoću tankih iglica, s ciljem uspostavljanja ravnoteže energije (Qi) i poboljšanja zdravlja. Ova tehnika potiče prirodne procese samoizlječenja, smanjuje bol, ublažava stres te pomaže kod brojnih fizičkih i emocionalnih tegoba, uključujući glavobolje, artritis, nesanicu i probavne probleme. Kao liječnica koja kombinira zapadnu medicinu i tradicionalne terapije, koristim akupunkturu kao siguran, učinkovit i dokazano djelotvoran način za poboljšanje općeg zdravlja i kvalitete života.",
+  "section": [
+    {
+      "title": "Što možete očekivati od akupunkture?",
+      "content": "Akupunktura je neinvazivna terapija koja koristi tanke iglice kako bi stimulirala određene točke na tijelu i potaknula protok energije, bez bolnih senzacija. Nakon tretmana akupunkturom, mnogi pacijenti osjećaju duboko opuštanje, bolji san i poboljšanje općeg blagostanja, a efekti se često povećavaju kroz više uzastopnih tretmana.",
+      "icon": "needles.svg"
+    },
+    {
+      "title": "Dugoročne prednosti akupunkture",
+      "content": "Redoviti tretmani akupunkturom mogu donijeti dugoročne koristi za vaše zdravlje. Osim što smanjuje akutne i kronične bolove, akupunktura pomaže jačanju imunološkog sustava, regulira hormonalnu ravnotežu te poboljšava cirkulaciju. Ova terapija također može djelovati preventivno, održavajući ravnotežu energije u tijelu i sprječavajući razvoj novih zdravstvenih tegoba.",
+      "icon": "ying_yang.svg"
+    }
+  ]
+}

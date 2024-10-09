@@ -1,6 +1,7 @@
 import { Row, Col } from "antd";
 import { Fade } from "react-awesome-reveal";
 import { withTranslation } from "react-i18next";
+import { ReactNode } from "react"; // Import ReactNode type for flexibility
 
 import { ContentBlockProps } from "./types";
 import { Button } from "../../common/Button";
@@ -33,9 +34,12 @@ const ContentBlock = ({
     });
   };
 
+
+  console.log("Section data:", section);
+
   return (
     <ContentSection>
-      <Fade direction={direction} triggerOnce>
+      <Fade duration={2500} triggerOnce>
         <StyledRow
           justify="space-between"
           align="middle"
@@ -47,57 +51,53 @@ const ContentBlock = ({
           </Col>
           <Col lg={11} md={11} sm={11} xs={24}>
             <ContentWrapper>
-              <h6>{t(title)}</h6>
-              <Content>{t(content)}</Content>
-              {direction === "right" ? (
-                <ButtonWrapper>
-                  {typeof button === "object" &&
-                    button.map(
-                      (
-                        item: {
-                          color?: string;
-                          title: string;
-                        },
-                        id: number
-                      ) => {
-                        return (
-                          <Button
-                            key={id}
-                            color={item.color}
-                            onClick={() => scrollTo("about")}
-                          >
-                            {t(item.title)}
-                          </Button>
-                        );
-                      }
-                    )}
-                </ButtonWrapper>
+              {typeof title === "string" ? (
+                <h6>{t(title)}</h6>
               ) : (
+                title
+              )}
+              <Content>{t(content)}</Content>
+
+              {/* Handle both buttons and sections regardless of direction */}
+              {button && button.length > 0 && (
+                <ButtonWrapper>
+                  {button.map(
+                    (
+                      item: {
+                        color?: string;
+                        title: string;
+                        scrollTo?: string;
+                      },
+                      id: number
+                    ) => {
+                      if (!item.scrollTo) {
+                        return null;
+                      }
+                      return (
+                        <Button
+                          key={id}
+                          color={item.color}
+                          onClick={() => scrollTo(item.scrollTo!)}
+                        >
+                          {t(item.title)}
+                        </Button>
+                      );
+                    }
+                  )}
+                </ButtonWrapper>
+              )}
+
+              {/* Render section if available */}
+              {section && section.length > 0 && (
                 <ServiceWrapper>
                   <Row justify="space-between">
-                    {typeof section === "object" &&
-                      section.map(
-                        (
-                          item: {
-                            title: string;
-                            content: string;
-                            icon: string;
-                          },
-                          id: number
-                        ) => {
-                          return (
-                            <Col key={id} span={11}>
-                              <SvgIcon
-                                src={item.icon}
-                                width="60px"
-                                height="60px"
-                              />
-                              <MinTitle>{t(item.title)}</MinTitle>
-                              <MinPara>{t(item.content)}</MinPara>
-                            </Col>
-                          );
-                        }
-                      )}
+                    {section.map((item, index) => (
+                      <Col key={index} span={11}>
+                        <SvgIcon src={item.icon} width="60px" height="60px" />
+                        <MinTitle>{t(item.title)}</MinTitle>
+                        <MinPara>{t(item.content)}</MinPara>
+                      </Col>
+                    ))}
                   </Row>
                 </ServiceWrapper>
               )}

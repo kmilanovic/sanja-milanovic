@@ -1,16 +1,6 @@
 {
-  "title": "Light, fast & responsive",
-  "text": "This template is ready to use, so you don't need to change anything at a component level, unless you want to customize the default styling.",
-  "section": [
-    {
-      "title": "Why Antd?",
-      "content": "Ant Design is a React UI library that has a lot of easy-to-use components for building elegant UI.",
-      "icon": "notes.svg"
-    },
-    {
-      "title": "Why styled-components?",
-      "content": "Styled Components gives you total control over your components.",
-      "icon": "notes.svg"
-    }
-  ]
-}
+    "title": "Holistički pristup zdravlju – spoj moderne medicine i tradicionalnih terapija",
+    "text": "Kao liječnica s dugogodišnjim iskustvom, specijalizirala sam se za integraciju zapadne medicine i tradicionalnih metoda poput hipnoterapije i akupunkture. Moje obrazovanje uključuje diplomu iz medicine te brojne certifikate iz alternativnih terapija. Ovim pristupom, kroz personalizirane tretmane, pomažem pacijentima da postignu ravnotežu tijela i uma, koristeći sigurne i znanstveno potkrijepljene tehnike koje podupiru proces ozdravljenja.",
+    "button": ""
+  }
+  

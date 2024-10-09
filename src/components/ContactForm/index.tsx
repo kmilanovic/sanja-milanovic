@@ -1,6 +1,6 @@
 import { Row, Col } from "antd";
 import { withTranslation } from "react-i18next";
-import { Slide } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 import { ContactProps, ValidationTypeProps } from "./types";
 import { useForm } from "../../common/utils/useForm";
 import validate from "../../common/utils/validationRules";
@@ -22,18 +22,18 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
     <ContactContainer id={id}>
       <Row justify="space-between" align="middle">
         <Col lg={12} md={11} sm={24} xs={24}>
-          <Slide direction="left" triggerOnce>
+          <Fade duration={2500} triggerOnce> 
             <Block title={title} content={content} />
-          </Slide>
+          </Fade>
         </Col>
         <Col lg={12} md={12} sm={24} xs={24}>
-          <Slide direction="right" triggerOnce>
+          <Fade duration={2500} triggerOnce> 
             <FormGroup autoComplete="off" onSubmit={handleSubmit}>
               <Col span={24}>
                 <Input
                   type="text"
-                  name="name"
-                  placeholder="Your Name"
+                  name="ime"
+                  placeholder="Vaše ime"
                   value={values.name || ""}
                   onChange={handleChange}
                 />
@@ -43,7 +43,7 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
                 <Input
                   type="text"
                   name="email"
-                  placeholder="Your Email"
+                  placeholder="Vaš Email"
                   value={values.email || ""}
                   onChange={handleChange}
                 />
@@ -51,18 +51,18 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
               </Col>
               <Col span={24}>
                 <TextArea
-                  placeholder="Your Message"
+                  placeholder="Vaša poruka"
                   value={values.message || ""}
-                  name="message"
+                  name="poruka"
                   onChange={handleChange}
                 />
                 <ValidationType type="message" />
               </Col>
               <ButtonContainer>
-                <Button name="submit">{t("Submit")}</Button>
+                <Button name="submit">{t("Pošalji")}</Button>
               </ButtonContainer>
             </FormGroup>
-          </Slide>
+          </Fade>
         </Col>
       </Row>
     </ContactContainer>

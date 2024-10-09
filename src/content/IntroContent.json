@@ -1,13 +1,16 @@
 {
-  "title": "Landing page template for developers & startups",
-  "text": "Beautifully designed templates using React.js, ant design and styled-components! Save weeks of time and build your landing page in minutes.",
+  "title": "",
+  "text": "Kao hipnoterapeut i akupunkturist te liječnik, nudim jedinstven pristup liječenju koji spaja medicinsko znanje i tradicionalne terapije, osiguravajući sigurno i prilagođeno liječenje za najbolje rezultate.",
   "button": [
     {
-      "title": "Explore"
+      "title": "O meni",
+      "color": "",
+      "scrollTo": "about"
     },
     {
-      "title": "Learn more",
-      "color": "#fff"
+      "title": "Istraži više",
+      "color": "#fff",
+      "scrollTo": "hypnotherapy"
     }
   ]
 }
