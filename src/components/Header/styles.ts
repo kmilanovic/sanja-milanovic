@@ -94,3 +94,13 @@ export const Span = styled("span")`
     text-decoration-color: #03346E;
   }
 `;
+
+export const DrawerStyle = styled.div`
+  .responsive-drawer {
+    @media only screen and (max-width: 600px) {
+      .ant-drawer-content-wrapper {
+        width: 100% !important;
+      }
+    }
+  }
+`;

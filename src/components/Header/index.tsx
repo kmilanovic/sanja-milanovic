@@ -68,11 +68,20 @@ const Header = ({ t }: { t: TFunction }) => {
             <Outline />
           </Burger>
         </Row>
-        <Drawer closable={false} open={visible} onClose={toggleButton}>
+        <Drawer closable={false} open={visible} onClose={toggleButton}
+         drawerStyle={{
+          width: '75vw',
+          maxWidth: '300px',
+        }}
+        bodyStyle={{
+          padding: '20px',
+        }}
+        className="responsive-drawer"
+        >
           <Col style={{ marginBottom: "2.5rem" }}>
             <Label onClick={toggleButton}>
               <Col span={12}>
-                <Menu>Menu</Menu>
+                <Menu></Menu>
               </Col>
               <Col span={12}>
                 <Outline />

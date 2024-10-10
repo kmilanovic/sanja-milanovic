@@ -5,6 +5,7 @@ import HypnotherapyContent from "../../content/HypnotherapyContent.json";
 import AcupunctureContent from "../../content/AcupunctureContent.json";
 import ContactContent from "../../content/ContactContent.json";
 import { SvgIcon } from "../../common/SvgIcon";
+import { Divider } from "../../styles/divider";
 
 const Contact = lazy(() => import("../../components/ContactForm"));
 const MiddleBlock = lazy(() => import("../../components/MiddleBlock"));
@@ -18,7 +19,12 @@ const Home = () => {
       <ScrollToTop />
       <ContentBlock
         direction="right"
-        title={<SvgIcon src="sanja-milanovic-signature2.svg" width="500px" height="300px" />} 
+        title={
+          <SvgIcon 
+            src="sanja-milanovic-signature2.svg"
+            style={{ width: '100%', maxWidth: '500px', height: 'auto' }} 
+          />
+        }
         content={IntroContent.text}
         button={IntroContent.button}
         icon="ai-generated-a-female-doctor-with-a-stethoscope-isolated-on-transparent-background-free-png.webp"
@@ -30,6 +36,7 @@ const Home = () => {
         button={AboutContent.button}
         id="about"
       />
+      <Divider />
       <ContentBlock
         direction="left"
         title={HypnotherapyContent.title}
@@ -38,6 +45,7 @@ const Home = () => {
         icon="Hypnotherapy.jpg"
         id="hypnotherapy"
       />
+      <Divider />
       <ContentBlock
         direction="right"
         title={AcupunctureContent.title}
@@ -46,6 +54,7 @@ const Home = () => {
         icon="acupuncture.jpg"
         id="acupuncture"
       />
+      <Divider />
       <Contact
         title={ContactContent.title}
         content={ContactContent.text}

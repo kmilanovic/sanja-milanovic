@@ -13,7 +13,7 @@ import {
   MinTitle,
   MinPara,
   StyledRow,
-  ButtonWrapper,
+  ButtonWrapper
 } from "./styles";
 
 const ContentBlock = ({
@@ -32,9 +32,6 @@ const ContentBlock = ({
       behavior: "smooth",
     });
   };
-
-
-  console.log("Section data:", section);
 
   return (
     <ContentSection>

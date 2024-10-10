@@ -52,7 +52,6 @@ export const Para = styled("div")`
 export const Large = styled(Link)`
   font-size: 16px;
   color: #000;
-  cursor: pointer;
   transition: all 10s ease-in-out;
   text-transform: capitalize;
   line-height: 24px;
@@ -60,12 +59,6 @@ export const Large = styled(Link)`
   margin-bottom: 0.625rem;
   transition: all 10s ease-in-out;
   max-width: max-content;
-
-  &:hover {
-    color: rgb(255, 130, 92);
-    text-underline-position: under;
-    text-decoration: rgb(255, 130, 92) wavy underline;
-  }
 `;
 
 export const Chat = styled("p")`
