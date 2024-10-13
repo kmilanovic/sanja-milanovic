@@ -39,7 +39,6 @@ const Footer = ({ t }: { t: TFunction }) => {
           <Row justify="space-between">
             <Col lg={8} md={12} sm={24} xs={24}>
               <Language>{t("E-mail")}</Language>
-              <Large to="/">{t("Obratite nam se s povjerenjem")}</Large>
               <Para>{t(`Imate pitanja? Stojimo na raspolaganju.`)}</Para>
               <a href="mailto:l.qqbadze@gmail.com">
                 <Chat>{t(`Pošalji poruku`)}</Chat>
@@ -51,11 +50,9 @@ const Footer = ({ t }: { t: TFunction }) => {
               <Para>00385 99 1234 567</Para>
             </Col>
 
-            {/* Added Potražite nas row for social links */}
             <Col lg={8} md={12} sm={24} xs={24}>
               <Language>{t("Potražite nas")}</Language>
               <Row>
-                {/* Social Media Links */}
                 <SocialLink href="https://www.facebook.com" src="facebook.svg" />
               </Row>
             </Col>
@@ -69,7 +66,8 @@ const Footer = ({ t }: { t: TFunction }) => {
           </Row>
 
           <Row justify="space-between" align="middle" style={{ paddingTop: "3rem" }}>
-            <a aria-label="homepage">
+            <Col>
+            <a href="/" aria-label="homepage">
               <LogoContainer>
                 <SvgIcon
                   src="sm2.svg"
@@ -79,9 +77,12 @@ const Footer = ({ t }: { t: TFunction }) => {
                 />
               </LogoContainer>
             </a>
+            </Col>
+            <Col>
             <FooterContainer>
               © 2024 Sanja Milanović | Powered by Sanja Milanović
             </FooterContainer>
+            </Col>
           </Row>
         </Container>
       </FooterSection>
