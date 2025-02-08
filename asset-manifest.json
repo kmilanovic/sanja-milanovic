@@ -1,27 +1,29 @@
 {
   "files": {
     "main.css": "/sanja-milanovic/static/css/main.18dfb25f.css",
-    "main.js": "/sanja-milanovic/static/js/main.7eca0cd6.js",
-    "static/js/848.b61e8c78.chunk.js": "/sanja-milanovic/static/js/848.b61e8c78.chunk.js",
+    "main.js": "/sanja-milanovic/static/js/main.88e978ac.js",
+    "static/js/848.3f389804.chunk.js": "/sanja-milanovic/static/js/848.3f389804.chunk.js",
+    "static/js/744.2dca83bc.chunk.js": "/sanja-milanovic/static/js/744.2dca83bc.chunk.js",
     "static/js/609.4ba0c685.chunk.js": "/sanja-milanovic/static/js/609.4ba0c685.chunk.js",
     "static/js/281.53f7b605.chunk.js": "/sanja-milanovic/static/js/281.53f7b605.chunk.js",
     "static/js/722.186e3727.chunk.js": "/sanja-milanovic/static/js/722.186e3727.chunk.js",
-    "static/js/290.81c7d712.chunk.js": "/sanja-milanovic/static/js/290.81c7d712.chunk.js",
+    "static/js/290.facfe1e9.chunk.js": "/sanja-milanovic/static/js/290.facfe1e9.chunk.js",
     "static/js/758.fb2dac89.chunk.js": "/sanja-milanovic/static/js/758.fb2dac89.chunk.js",
     "static/js/691.d7e1f965.chunk.js": "/sanja-milanovic/static/js/691.d7e1f965.chunk.js",
     "index.html": "/sanja-milanovic/index.html",
     "main.18dfb25f.css.map": "/sanja-milanovic/static/css/main.18dfb25f.css.map",
-    "main.7eca0cd6.js.map": "/sanja-milanovic/static/js/main.7eca0cd6.js.map",
-    "848.b61e8c78.chunk.js.map": "/sanja-milanovic/static/js/848.b61e8c78.chunk.js.map",
+    "main.88e978ac.js.map": "/sanja-milanovic/static/js/main.88e978ac.js.map",
+    "848.3f389804.chunk.js.map": "/sanja-milanovic/static/js/848.3f389804.chunk.js.map",
+    "744.2dca83bc.chunk.js.map": "/sanja-milanovic/static/js/744.2dca83bc.chunk.js.map",
     "609.4ba0c685.chunk.js.map": "/sanja-milanovic/static/js/609.4ba0c685.chunk.js.map",
     "281.53f7b605.chunk.js.map": "/sanja-milanovic/static/js/281.53f7b605.chunk.js.map",
     "722.186e3727.chunk.js.map": "/sanja-milanovic/static/js/722.186e3727.chunk.js.map",
-    "290.81c7d712.chunk.js.map": "/sanja-milanovic/static/js/290.81c7d712.chunk.js.map",
+    "290.facfe1e9.chunk.js.map": "/sanja-milanovic/static/js/290.facfe1e9.chunk.js.map",
     "758.fb2dac89.chunk.js.map": "/sanja-milanovic/static/js/758.fb2dac89.chunk.js.map",
     "691.d7e1f965.chunk.js.map": "/sanja-milanovic/static/js/691.d7e1f965.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.18dfb25f.css",
-    "static/js/main.7eca0cd6.js"
+    "static/js/main.88e978ac.js"
   ]
 }
