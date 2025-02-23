@@ -1,29 +1,33 @@
 {
   "files": {
     "main.css": "/sanja-milanovic/static/css/main.18dfb25f.css",
-    "main.js": "/sanja-milanovic/static/js/main.88e978ac.js",
-    "static/js/848.3f389804.chunk.js": "/sanja-milanovic/static/js/848.3f389804.chunk.js",
+    "main.js": "/sanja-milanovic/static/js/main.f145c8d2.js",
+    "static/css/160.7cce5acc.chunk.css": "/sanja-milanovic/static/css/160.7cce5acc.chunk.css",
+    "static/js/160.13fea69e.chunk.js": "/sanja-milanovic/static/js/160.13fea69e.chunk.js",
     "static/js/744.2dca83bc.chunk.js": "/sanja-milanovic/static/js/744.2dca83bc.chunk.js",
     "static/js/609.4ba0c685.chunk.js": "/sanja-milanovic/static/js/609.4ba0c685.chunk.js",
     "static/js/281.53f7b605.chunk.js": "/sanja-milanovic/static/js/281.53f7b605.chunk.js",
     "static/js/722.186e3727.chunk.js": "/sanja-milanovic/static/js/722.186e3727.chunk.js",
-    "static/js/290.facfe1e9.chunk.js": "/sanja-milanovic/static/js/290.facfe1e9.chunk.js",
+    "static/js/290.a7e4e875.chunk.js": "/sanja-milanovic/static/js/290.a7e4e875.chunk.js",
     "static/js/758.fb2dac89.chunk.js": "/sanja-milanovic/static/js/758.fb2dac89.chunk.js",
     "static/js/691.d7e1f965.chunk.js": "/sanja-milanovic/static/js/691.d7e1f965.chunk.js",
+    "static/js/896.f1a1194c.chunk.js": "/sanja-milanovic/static/js/896.f1a1194c.chunk.js",
     "index.html": "/sanja-milanovic/index.html",
     "main.18dfb25f.css.map": "/sanja-milanovic/static/css/main.18dfb25f.css.map",
-    "main.88e978ac.js.map": "/sanja-milanovic/static/js/main.88e978ac.js.map",
-    "848.3f389804.chunk.js.map": "/sanja-milanovic/static/js/848.3f389804.chunk.js.map",
+    "main.f145c8d2.js.map": "/sanja-milanovic/static/js/main.f145c8d2.js.map",
+    "160.7cce5acc.chunk.css.map": "/sanja-milanovic/static/css/160.7cce5acc.chunk.css.map",
+    "160.13fea69e.chunk.js.map": "/sanja-milanovic/static/js/160.13fea69e.chunk.js.map",
     "744.2dca83bc.chunk.js.map": "/sanja-milanovic/static/js/744.2dca83bc.chunk.js.map",
     "609.4ba0c685.chunk.js.map": "/sanja-milanovic/static/js/609.4ba0c685.chunk.js.map",
     "281.53f7b605.chunk.js.map": "/sanja-milanovic/static/js/281.53f7b605.chunk.js.map",
     "722.186e3727.chunk.js.map": "/sanja-milanovic/static/js/722.186e3727.chunk.js.map",
-    "290.facfe1e9.chunk.js.map": "/sanja-milanovic/static/js/290.facfe1e9.chunk.js.map",
+    "290.a7e4e875.chunk.js.map": "/sanja-milanovic/static/js/290.a7e4e875.chunk.js.map",
     "758.fb2dac89.chunk.js.map": "/sanja-milanovic/static/js/758.fb2dac89.chunk.js.map",
-    "691.d7e1f965.chunk.js.map": "/sanja-milanovic/static/js/691.d7e1f965.chunk.js.map"
+    "691.d7e1f965.chunk.js.map": "/sanja-milanovic/static/js/691.d7e1f965.chunk.js.map",
+    "896.f1a1194c.chunk.js.map": "/sanja-milanovic/static/js/896.f1a1194c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.18dfb25f.css",
-    "static/js/main.88e978ac.js"
+    "static/js/main.f145c8d2.js"
   ]
 }
