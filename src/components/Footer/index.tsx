@@ -67,7 +67,7 @@ const Footer = ({ t }: { t: TFunction }) => {
 
           <Row justify="space-between" align="middle" style={{ paddingTop: "3rem" }}>
             <Col>
-            <a href="/" aria-label="homepage">
+            <a href="/sanja-milanovic" aria-label="homepage">
               <LogoContainer>
                 <SvgIcon
                   src="sm2.svg"

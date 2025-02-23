@@ -18,6 +18,7 @@ import {
 
 const ContentBlock = ({
   icon,
+  iconSize,
   title,
   content,
   section,
@@ -25,6 +26,7 @@ const ContentBlock = ({
   t,
   id,
   direction,
+  children, 
 }: ContentBlockProps) => {
   const scrollTo = (id: string) => {
     const element = document.getElementById(id) as HTMLDivElement;
@@ -36,49 +38,34 @@ const ContentBlock = ({
   return (
     <ContentSection>
       <Fade duration={2500} triggerOnce>
-        <StyledRow
-          justify="space-between"
-          align="middle"
-          id={id}
-          direction={direction}
-        >
+        <StyledRow justify="space-between" align="middle" id={id} direction={direction}>
           <Col lg={11} md={11} sm={12} xs={24}>
-            <SvgIcon src={icon} width="100%" height="100%" />
+            {children ? (
+              children
+            ) : icon ? (
+              <SvgIcon
+                src={icon}
+                width={iconSize?.width || "100%"}
+                height={iconSize?.height || "100%"}
+              />
+            ) : null}
           </Col>
+
           <Col lg={11} md={11} sm={11} xs={24}>
             <ContentWrapper>
-              {typeof title === "string" ? (
-                <h6>{t(title)}</h6>
-              ) : (
-                title
-              )}
+              {typeof title === "string" ? <h6>{t(title)}</h6> : title}
               <Content>{t(content)}</Content>
 
               {button && button.length > 0 && (
                 <ButtonWrapper>
-                  {button.map(
-                    (
-                      item: {
-                        color?: string;
-                        title: string;
-                        scrollTo?: string;
-                      },
-                      id: number
-                    ) => {
-                      if (!item.scrollTo) {
-                        return null;
-                      }
-                      return (
-                        <Button
-                          key={id}
-                          color={item.color}
-                          onClick={() => scrollTo(item.scrollTo!)}
-                        >
-                          {t(item.title)}
-                        </Button>
-                      );
-                    }
-                  )}
+                  {button.map((item, id) => {
+                    if (!item.scrollTo) return null;
+                    return (
+                      <Button key={id} color={item.color} onClick={() => scrollTo(item.scrollTo!)}>
+                        {t(item.title)}
+                      </Button>
+                    );
+                  })}
                 </ButtonWrapper>
               )}
 
@@ -87,7 +74,11 @@ const ContentBlock = ({
                   <Row justify="space-between">
                     {section.map((item, index) => (
                       <Col key={index} span={11}>
-                        <SvgIcon src={item.icon} width="60px" height="60px" />
+                         <SvgIcon 
+            src={item.icon}  // 👈 Ensure this receives the full path from JSON
+            width="60px" 
+            height="60px" 
+          />
                         <MinTitle>{t(item.title)}</MinTitle>
                         <MinPara>{t(item.content)}</MinPara>
                       </Col>

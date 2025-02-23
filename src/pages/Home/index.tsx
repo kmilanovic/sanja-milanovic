@@ -1,11 +1,16 @@
 import { lazy } from "react";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+
 import IntroContent from "../../content/IntroContent.json";
 import AboutContent from "../../content/AboutContent.json";
 import HypnotherapyContent from "../../content/HypnotherapyContent.json";
 import AcupunctureContent from "../../content/AcupunctureContent.json";
 import ContactContent from "../../content/ContactContent.json";
-import { SvgIcon } from "../../common/SvgIcon";
+
 import { Divider } from "../../styles/divider";
+import { SvgIcon } from "../../common/SvgIcon";
+
 
 const Contact = lazy(() => import("../../components/ContactForm"));
 const MiddleBlock = lazy(() => import("../../components/MiddleBlock"));
@@ -17,6 +22,7 @@ const Home = () => {
   return (
     <Container>
       <ScrollToTop />
+      
       <ContentBlock
         direction="right"
         title={
@@ -27,9 +33,11 @@ const Home = () => {
         }
         content={IntroContent.text}
         button={IntroContent.button}
-        icon="ai-generated-a-female-doctor-with-a-stethoscope-isolated-on-transparent-background-free-png.webp"
+        icon="sanja-milanovic.png"
+        iconSize={{ width: "350px", height: "auto" }}
         id="intro"
       />
+
       <MiddleBlock
         title={AboutContent.title}
         content={AboutContent.text}
@@ -37,29 +45,68 @@ const Home = () => {
         id="about"
       />
       <Divider />
+
+
       <ContentBlock
         direction="left"
         title={HypnotherapyContent.title}
         content={HypnotherapyContent.text}
         section={HypnotherapyContent.section}
-        icon="Hypnotherapy.jpg"
         id="hypnotherapy"
-      />
+      >
+        <Carousel 
+        autoPlay 
+        interval={3000} 
+        infiniteLoop 
+        showThumbs={true}
+        showStatus={false}
+        showArrows={false}
+        transitionTime={1000}
+        swipeScrollTolerance={5}>
+          {HypnotherapyContent.images.map((img, index) => (
+            <div key={index}>
+              <img 
+              src={img} 
+              alt={`Hypnotherapy ${index + 1}`} 
+              style={{ width: "100%", height: "auto" }} 
+              />
+            </div>
+          ))}
+        </Carousel>
+      </ContentBlock>
+
       <Divider />
+
       <ContentBlock
         direction="right"
         title={AcupunctureContent.title}
         content={AcupunctureContent.text}
         section={AcupunctureContent.section}
-        icon="acupuncture.jpg"
         id="acupuncture"
-      />
+      >
+        <Carousel 
+        autoPlay 
+        interval={3000} 
+        infiniteLoop 
+        showThumbs={true}
+        showStatus={false}
+        showArrows={false}
+        transitionTime={1000}
+        swipeScrollTolerance={5}>
+          {AcupunctureContent.images.map((img, index) => (
+            <div key={index}>
+              <img 
+              src={img} 
+              alt={`Acupuncture ${index + 1}`} 
+              style={{ width: "100%", height: "auto" }} 
+              />
+            </div>
+          ))}
+        </Carousel>
+      </ContentBlock>
+
       <Divider />
-      <Contact
-        title={ContactContent.title}
-        content={ContactContent.text}
-        id="contact"
-      />
+      <Contact title={ContactContent.title} content={ContactContent.text} id="contact" />
     </Container>
   );
 };
